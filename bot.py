@@ -8,7 +8,7 @@ from datetime import datetime
 # ─────────────────────────────────────────────
 #  CONFIG  –  edit these before running
 # ─────────────────────────────────────────────
-BOT_TOKEN   = "YOUR_BOT_TOKEN_HERE"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 GUILD_ID    = None          # Set to your server ID (int) for instant slash-command sync
 DATA_FILE   = "data.json"
 ACCENT      = 0x00BFFF     # Embed accent colour (DeepSkyBlue)
